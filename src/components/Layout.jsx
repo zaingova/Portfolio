@@ -28,7 +28,7 @@ export default function Layout() {
                     Contact
                 </NavLink>
             </nav>
-
+            
             <br />
             <hr />
         </>

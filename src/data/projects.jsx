@@ -12,7 +12,7 @@ export const projects = [
                 options and save it. A page containning a list of all dishes is also provided to the user.
                 <br></br>
                 <br></br>
-                Once the user is signed in, they are redirected to the homepage, where they can select search \\
+                Once the user is signed in, they are redirected to the homepage, where they can select searchSbn
                 parameters for dishes they might want to make. After clicking the "generate" button, a random
                 dish with those parameters will appear on the right panel. The user can either click "save"
                 to save that dish to their account, or they can check new search queries and generate a new dish.
