@@ -1,7 +1,10 @@
+// projects.js - Zain Gova - 301018602 - September 22, 2024
+
 const fun_with_food = new URL('../assets/fun_with_food.png', import.meta.url).href
 const employee_tracker = new URL('../assets/employee_tracker.png', import.meta.url).href
 const freelance_platform = new URL('../assets/freelance_platform.png', import.meta.url).href
 
+// each project contains an id (so I don't get a key error), a title, a description, an image link, and a project link
 export const projects = [
     {
         id: 1,

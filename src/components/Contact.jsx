@@ -14,9 +14,6 @@ export default function Contact() {
                  by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal
                   blame belongs to those who fail in their duty through weakness of will, which is the same
                    as saying through shrinking from toil and pain.</p>
-            <a download="Zain Gova - Resume.pdf" href={resumeFile}><button className="download" href={resumeFile}>Download Resume</button></a>
-            <br></br>
-            <a href={resumeFile}><img src={resumeImg} className="resume"></img></a>
             <ToTopButton/>
             <Footer socials={socials}/>
         </div>

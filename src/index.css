@@ -1,4 +1,4 @@
-
+/* index.jsx - Zain Gova - 301018602 - September 22, 2024 */
 
 :root {
   font-family: "Open Sans", sans-serif;
@@ -36,8 +36,8 @@ a h1 {
 
 body {
   margin: 0;
-
-  min-width: 320px;
+  min-width: 700px;
+  overflow-x:hidden ;
   min-height: 100vh;
 }
 
@@ -56,6 +56,7 @@ footer {
 
 footer p {
   margin-top: -8px;
+  opacity: 0.5;
 }
 
 button img {
@@ -70,7 +71,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+/* 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -84,7 +85,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 nav {
   float: left;
@@ -228,29 +229,39 @@ hr {
 }
 
 .footerElement {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0 0.3em;
 }
 
 .back-to-top {
   display: block;
   position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px;  /* Adjust as needed */
-  color: white; /* Text color */
-  border: none; /* Remove default border */
-  width: 60px; /* Width of the button */
-  height: 60px; /* Height of the button */
+  bottom: 20px;
+  right: 20px;  
+  color: white; 
+  border: none; 
+  width: 60px; 
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* Show pointer cursor on hover */
-  font-size: 24px; /* Adjust icon size */
-  z-index: 1000; /* Ensure it's on top of other elements */
+  cursor: pointer; 
+  font-size: 24px;
+  z-index: 1000;
   transition: 0.5s ease;
 }
 
 .back-to-top:hover {
   width: 3em;
   transform: scale(1.2);
+}
+
+@media (max-width: 1100px) {
+  .resume {
+    width: 97%;
+  }
+
+  .projects {
+    width: 97%;
+  }
 }

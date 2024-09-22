@@ -15,7 +15,7 @@ export const socials = [
     },
     {
         id: 3,
-        link: "zgova@my.centennialcollege.ca",
+        link: "mailto:zgova@my.centennialcollege.ca",
         icon: <IoMailOpenSharp />
     }
 ]
