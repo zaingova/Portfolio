@@ -1,4 +1,6 @@
 import ToTopButton from "./ToTopButton";
+import Footer from "./Footer"
+import { socials } from "../data/socials"
 
 export default function About() {
     return(
@@ -9,6 +11,7 @@ export default function About() {
                  sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
                  mollitia animi, id est laborum et dolorum fuga.</p>
             <ToTopButton/>
+            <Footer socials={socials}/>
         </div>
     );
 }

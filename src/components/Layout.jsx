@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/icon.svg";
+import Footer from "./Footer";
+import {socials} from "../data/socials.jsx";
 
 export default function Layout() {
     return (

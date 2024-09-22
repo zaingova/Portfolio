@@ -1,4 +1,6 @@
 import ToTopButton from "./ToTopButton"
+import Footer from "./Footer"
+import { socials } from "../data/socials"
 export default function Home() {
     return (
         <div className="content">
@@ -27,6 +29,7 @@ export default function Home() {
             {/* <img src={test} alt="portrait" className="portrait"></img> */}
             <br></br>
             <ToTopButton/>
+            <Footer socials={socials}/>
         </div>
     )
 }

@@ -1,6 +1,9 @@
 import ToTopButton from "./ToTopButton";
-const resume = new URL('../assets/resume.png', import.meta.url).href
-const resume2 = new URL('../assets/resume2.png', import.meta.url).href
+import resumeFile from "../assets/resumeFile.pdf";
+import Footer from "./Footer"
+import { socials } from "../data/socials"
+
+const resumeImg = new URL('../assets/resumeImg.png', import.meta.url).href
 
 export default function Contact() {
     return(
@@ -11,14 +14,11 @@ export default function Contact() {
                  by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal
                   blame belongs to those who fail in their duty through weakness of will, which is the same
                    as saying through shrinking from toil and pain.</p>
-            <button onClick={() => {
-                
-            }}>Download Resume</button>
+            <a download="Zain Gova - Resume.pdf" href={resumeFile}><button className="download" href={resumeFile}>Download Resume</button></a>
             <br></br>
-            <a href={resume}><img src={resume} className="resume"></img></a>
-            <a href={resume2}><img src={resume2} className="resume"></img></a>
-
+            <a href={resumeFile}><img src={resumeImg} className="resume"></img></a>
             <ToTopButton/>
+            <Footer socials={socials}/>
         </div>
     )
 }

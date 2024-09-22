@@ -14,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  margin: 30px 3em 30px 3em;
+  margin: 30px 3em 0 3em;
 }
 
 a {
@@ -44,6 +44,18 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 17px;
+}
+
+footer p {
+  margin-top: -8px;
 }
 
 button img {
@@ -138,16 +150,36 @@ hr {
 }
 
 .resume {
-  width: 70vw;
+  width: 70%;
   height: auto;
-  margin: 2em auto auto auto;
+  border: 11px double #292d79;
+  margin: 0 auto 0.7em auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .header {
   display: flex;
   align-items: center;
   padding: 5px;
+}
 
+.download {
+  padding: 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 2em 0;
+  border-radius: 60px;
+  border: 2px solid white;
+  background-color:#4a50d1;
+  transition: 0.7s ease;
+}
+
+.download:hover {
+  background-color: #3a3eb2;
+  border: 2px solid white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
 }
 
 .header-link {
@@ -193,6 +225,11 @@ hr {
 
 .dividerThin {
   border: 1px solid #3e43ac;
+}
+
+.footerElement {
+  font-size: 4em;
+  margin: 0 0.3em;
 }
 
 .back-to-top {
