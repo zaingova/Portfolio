@@ -7,13 +7,19 @@ export default function Projects() {
             <div className="projects">
                 {projects.map(({ id, title, description, img, link }) => (
                     <div key={id} className="project">
-                        <a href={link} target="_blank" rel="noopener noreferrer">
-                            <h2 className="projectHeading">{id}. {title}</h2>
-                        </a>
-                        <p className="subheading">{description}</p>
-                        <a href={link} target="_blank" rel="noopener noreferrer">
-                            <img src={img} alt="Fun With Food" className="projectImg"></img>
-                        </a>
+                        <div className="projectCard">
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                <h2 className="projectHeading">{title}</h2>
+                            </a>
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                <img src={img} alt="Fun With Food" className=""></img>
+                            </a>
+                            <hr></hr>
+                            <p className="subheading">{description}</p>
+                            <a href={link} target="_blank">
+                                <button className="download">Take me to project repository!</button>
+                            </a>
+                        </div>
                         <br></br>
                         <hr className="dividerThin"></hr>
                     </div>

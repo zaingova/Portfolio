@@ -6,7 +6,7 @@ import { socials } from "../data/socials"
 export default function Project() {
     return(
         <div className="content">
-            <p className="headingLarge italic">PROJECTS</p>
+            <p className="headingLarge">PROJECTS</p>
             <hr className="dividerThin"></hr>
             <Projects/>
             <ToTopButton/>

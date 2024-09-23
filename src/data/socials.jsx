@@ -10,7 +10,7 @@ export const socials = [
     },
     {
         id: 2,
-        link: "https://www.linkedin.com/in/zain-gova-833a639a/",
+        link: "https://www.linkedin.com/in/zaingova/",
         icon: <FaLinkedin />
     },
     {
