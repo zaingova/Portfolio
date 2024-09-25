@@ -17,7 +17,7 @@ export default function Projects() {
                             <hr></hr>
                             <p className="subheading">{description}</p>
                             <a href={link} target="_blank">
-                                <button className="download">Take me to project repository!</button>
+                                <button className="download">Take me to the project repository!</button>
                             </a>
                         </div>
                         <br></br>

@@ -83,23 +83,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/
-
 nav {
   font-size: x-large;
 
@@ -127,6 +110,14 @@ nav {
   margin: 0.4em 0 0 0;
 }
 
+.headingDark {
+  color: #0f1471;
+  font-size: 1em;
+  font-weight: bolder;
+
+  margin: 0.4em 0 0 0;
+}
+
 .headingLarge {
   font-size: 2.1em;
   font-weight: bold;
@@ -138,6 +129,30 @@ nav {
 
 .italic {
   font-style: italic;
+}
+
+.contactForm {
+  width: 40%;
+  background-color: #4a50d1;
+  border: 11px double #292d79;
+  border-radius: 20px;
+  padding: 2em;
+  margin: 2em 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 13px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  border: 3px solid #292d79;
+  border-radius: 5px;
+  padding: 0.2em;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 .projectCard {
@@ -199,7 +214,7 @@ hr {
 }
 
 .resume {
-  width: 70%;
+  width: 75.5%;
   height: auto;
   margin: 0 auto 0.7em auto;
 
@@ -227,6 +242,48 @@ hr {
   border: 2px solid white;
   border-radius: 10px;
   background-color: #4a50d1;
+  cursor: pointer;
+}
+
+.redirect {
+  font-size: 1em;
+  font-weight: 600;
+  color: #ffffff;
+
+  margin: 2em 0;
+  padding: 1.2em;
+
+  transition: 0.7s ease;
+
+  border: 3px solid #2c318d;
+  border-radius: 10px;
+  background-color: #4047ce;
+}
+
+.pictureContainer {
+  display: flex;                /* Use flexbox for alignment */
+  justify-content: center;      /* Center the images horizontally */
+  gap: 20px;                    /* Add space between images */
+  flex-wrap: wrap;              /* Allow wrapping for smaller screens */
+}
+
+.photo {
+  border: 8px double #2c318d;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 27px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.redirect:hover {
+  border: 3px solid #31358f;
+  background-color: #31358f;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.hrLight {
+  border: 1px solid #3e43ab;
+  margin: 0.5em 0 1.8em 0;
 }
 
 .download:hover {
@@ -240,6 +297,16 @@ hr {
 .header-link {
   display: flex;
   align-items: center;
+}
+
+.linkCard {
+  width: 70%;
+  border: 11px double #31358f;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 2em 2em 0 2em;
+  margin-bottom: 3em;
+  background-color: #fff;
 }
 
 .logo {
@@ -331,10 +398,14 @@ hr {
   }
 
   .projectCard {
-    width: 94.5%;
+    width: 92.3%;
   }
 
   .projectImg {
     width: 94.5%;
+  }
+
+  .linkCard {
+    width: 91%;
   }
 }
