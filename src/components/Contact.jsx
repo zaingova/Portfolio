@@ -17,6 +17,7 @@ export default function Contact() {
             <hr className="hrLight"></hr>
             <form className="contactForm" onSubmit={() => {
                 alert("Thanks for getting in touch!");
+                window.location.reload();
             }}>
                 <label>Your Name</label><br></br>
                 <input type="text"></input><br></br>
