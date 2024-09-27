@@ -16,8 +16,8 @@ export default function Home() {
             <div className="linkCard">
                 <p className="headingDark">If you want to learn more about me, you should
                     head to the "About Me" section, which I'll link below. Here, you'll
-                    find some information about my educational background, my previous
-                    work experience, and a little bit about me in a general sense, too.
+                    find some information about my educational background, and my previous
+                    work experience.
                 </p>
                 <NavLink to="/about" end className="nav-link nav-link-first">
                     <button className="redirect" onClick={scroll}>Learn More About Me!</button>

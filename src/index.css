@@ -261,10 +261,10 @@ hr {
 }
 
 .pictureContainer {
-  display: flex;                /* Use flexbox for alignment */
-  justify-content: center;      /* Center the images horizontally */
-  gap: 20px;                    /* Add space between images */
-  flex-wrap: wrap;              /* Allow wrapping for smaller screens */
+  display: flex;                
+  justify-content: left;   
+  gap: 20px;          
+  flex-wrap: wrap;           
 }
 
 .photo {
@@ -318,6 +318,37 @@ hr {
   margin: 0;
 }
 
+.servicesTitle {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.servicesDesc {
+
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 2em; */
+  justify-content: center;
+}
+
+.servicesCard {
+  display: flex;
+  /* padding: 2em; */
+  gap: 3.5em;
+  width: 48%;
+  border: 11px double #31358f;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.servicesImg {
+  width: 50%;
+  float: right;
+}
+
 .content {
   margin-top: 1.2em;
 }
@@ -355,7 +386,6 @@ hr {
 
 .footerElement {
   font-size: 3em;
-
   margin: 0 0.3em;
 }
 
@@ -407,5 +437,18 @@ hr {
 
   .linkCard {
     width: 91%;
+  }
+
+  .contactForm {
+    width: 91%;
+  }
+
+  .pictureContainer {
+    justify-content: center;
+  }
+
+  .servicesCard {
+    width: 100%;
+    margin-bottom: 2em;
   }
 }
