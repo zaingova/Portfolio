@@ -15,14 +15,16 @@ export default function Contact() {
                 blame belongs to those who fail in their duty through weakness of will, which is the same
                 as saying through shrinking from toil and pain.</p>
             <hr className="hrLight"></hr>
-            <form className="contactForm">
+            <form className="contactForm" onSubmit={() => {
+                alert("Thanks for getting in touch!");
+            }}>
                 <label>Your Name</label><br></br>
                 <input type="text"></input><br></br>
                 <label>Your Email</label><br></br>
                 <input type="text"></input><br></br>
                 <label>Your Message</label><br></br>
                 <textarea rows={9}></textarea>
-                <button className="download" style={{marginBottom: '0'}}>Submit Form</button>
+            <button className="download" style={{marginBottom: '0'}}>Submit Form</button>
             </form>
             
             <ToTopButton />
