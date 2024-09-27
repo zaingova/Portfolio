@@ -1,3 +1,5 @@
+// Projects.jsx - Zain Gova - 301018602 - September 22, 2024
+
 import React from "react";
 import { projects } from "../data/projects";
 
@@ -5,6 +7,8 @@ export default function Projects() {
     return (
         <div>
             <div className="projects">
+                {/* destructures projects array into its parts, and sorts the details out into an element */}
+                {/* cleans up code structure */}
                 {projects.map(({ id, title, description, img, link }) => (
                     <div key={id} className="project">
                         <div className="projectCard">

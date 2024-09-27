@@ -1,3 +1,5 @@
+// Footer.jsx - Zain Gova - 301018602 - September 22, 2024
+
 export default function Footer({socials}) {
     return (
         <footer>

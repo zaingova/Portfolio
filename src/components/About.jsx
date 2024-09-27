@@ -1,3 +1,5 @@
+// About.jsx - Zain Gova - 301018602 - September 22, 2024
+
 import ToTopButton from "./ToTopButton";
 import Footer from "./Footer"
 import { socials } from "../data/socials"

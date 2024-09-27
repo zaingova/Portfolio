@@ -1,3 +1,5 @@
+// Contact.jsx - Zain Gova - 301018602 - September 22, 2024
+
 import ToTopButton from "./ToTopButton";
 import Footer from "./Footer"
 import { socials } from "../data/socials"
@@ -17,6 +19,8 @@ export default function Contact() {
                 as saying through shrinking from toil and pain.</p>
             <hr className="hrLight"></hr>
             <form className="contactForm" onSubmit={() => {
+                // prevents the form from redirecting us to '/contact?', becuase the deployed
+                // application woukd crash
                 event.preventDefault();
                 alert("Thanks for getting in touch!");
             }}>

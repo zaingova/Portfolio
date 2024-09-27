@@ -1,3 +1,5 @@
+// Layout.jsx - Zain Gova - 301018602 - September 22, 2024
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/icon.svg";

@@ -1,5 +1,7 @@
 /* index.jsx - Zain Gova - 301018602 - September 22, 2024 */
 
+/* root element */
+
 :root {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -16,6 +18,8 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
+
+/* semantic elements */
 
 a {
   /* ypography stuff */
@@ -78,9 +82,33 @@ button:hover {
   border-color: #646cff;
 }
 
+
+hr {
+  display: flex;
+
+  margin-top: 1em;
+
+  border-width: 0.1em;
+  border-color: #292d79;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 13px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  border: 3px solid #292d79;
+  border-radius: 5px;
+  padding: 0.2em;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -93,6 +121,8 @@ nav {
 
   color: #32379b;
 }
+
+/* class elements */
 
 .title {
   font-family: "Fascinate Inline", system-ui;
@@ -141,19 +171,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-input, textarea {
-  width: 100%;
-  font-size: 13px;
-  background-color: #fff;
-  border: none;
-  color: black;
-  border: 3px solid #292d79;
-  border-radius: 5px;
-  padding: 0.2em;
-  max-width: 100%;
-  min-width: 100%;
-  font-family: "Open Sans", sans-serif;
-}
+
 
 .projectCard {
   width: 100%;
@@ -200,14 +218,6 @@ input, textarea {
   color: #fff;
 }
 
-hr {
-  display: flex;
-
-  margin-top: 1em;
-
-  border-width: 0.1em;
-  border-color: #292d79;
-}
 
 .projects {
   width: 70%;
@@ -419,6 +429,8 @@ hr {
 .back-to-top-small:hover {
   opacity: 1;
 }
+
+/* media query for smaller screens */
 
 @media(max-width: 1100px) {
   .resume {
