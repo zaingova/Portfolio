@@ -5,7 +5,7 @@ import resumeFile from "../assets/resumeFile.pdf";
 const resumeImg = new URL('../assets/resumeImg.png', import.meta.url).href
 const portrait = new URL('../assets/portrait.PNG', import.meta.url).href
 const portrait2 = new URL('../assets/portrait2.JPG', import.meta.url).href
-const food = new URL('../assets/food.JPG', import.meta.url).href
+const food = new URL('../assets/food.jpg', import.meta.url).href
 
 
 export default function About() {

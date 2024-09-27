@@ -132,7 +132,7 @@ nav {
 }
 
 .contactForm {
-  width: 40%;
+  width: 70%;
   background-color: #4a50d1;
   border: 11px double #292d79;
   border-radius: 20px;
@@ -338,7 +338,8 @@ hr {
   display: flex;
   /* padding: 2em; */
   gap: 3.5em;
-  width: 48%;
+  margin: 10px;
+  width: 45%;
   border: 11px double #31358f;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba( 0, 0, 0, 0.22) 0px 15px 12px;
@@ -347,6 +348,7 @@ hr {
 .servicesImg {
   width: 50%;
   float: right;
+  margin: 20px;
 }
 
 .content {

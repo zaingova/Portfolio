@@ -28,58 +28,35 @@ export default function Services() {
                             <li>Next JS</li>
                         </ul>
                     </ul>
-                    <img src={backendAPI} className="servicesImg"></img>
                 </div>
                 <div className="servicesCard">
                     <ul>
-                        <li className="servicesTitle">Full Stack Web Development</li>
+                        <li className="servicesTitle">C# Programming</li>
                         <ul className="servicesDesc">
-                            <li>Express JS</li>
-                            <li>Developing REST APIs</li>
-                            <li>Sequelize</li>
-                            <li>Mongoose</li>
-                            <li>GraphQL</li>
-                            <li>Progressive Web Applications</li>
-                            <li>Tailwind CSS</li>
-                            <li>React</li>
-                            <li>Next JS</li>
+                            <li>Object Oriented</li>
+                            <li>Classes</li>
+                            <li>Delegates</li>
+                            <li>LINQ</li>
+                            <li>Operator Overloading</li>
+                            <li>Interfaces</li>
+                            <li>Regular Expressions</li>
                         </ul>
                     </ul>
-                    <img src={backendAPI} className="servicesImg"></img>
                 </div>
                 <div className="servicesCard">
                     <ul>
-                        <li className="servicesTitle">Full Stack Web Development</li>
+                        <li className="servicesTitle">Oracle SQL</li>
                         <ul className="servicesDesc">
-                            <li>Express JS</li>
-                            <li>Developing REST APIs</li>
-                            <li>Sequelize</li>
-                            <li>Mongoose</li>
-                            <li>GraphQL</li>
-                            <li>Progressive Web Applications</li>
-                            <li>Tailwind CSS</li>
-                            <li>React</li>
-                            <li>Next JS</li>
+                            <li>Table Creation, Updating, Deleting</li>
+                            <li>Key-Relationships</li>
+                            <li>Single-Row Functions</li>
+                            <li>Multi-Row Functions</li>
+                            <li>Subqueries</li>
+                            <li>Database Indexing</li>
+                            <li>Joins</li>
+                            <li>Views</li>
                         </ul>
                     </ul>
-                    <img src={backendAPI} className="servicesImg"></img>
-                </div>
-                <div className="servicesCard">
-                    <ul>
-                        <li className="servicesTitle">Full Stack Web Development</li>
-                        <ul className="servicesDesc">
-                            <li>Express JS</li>
-                            <li>Developing REST APIs</li>
-                            <li>Sequelize</li>
-                            <li>Mongoose</li>
-                            <li>GraphQL</li>
-                            <li>Progressive Web Applications</li>
-                            <li>Tailwind CSS</li>
-                            <li>React</li>
-                            <li>Next JS</li>
-                        </ul>
-                    </ul>
-                    <img src={backendAPI} className="servicesImg"></img>
                 </div>
             </div>
             <hr className="hrLight"></hr>
