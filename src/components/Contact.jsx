@@ -1,7 +1,8 @@
 import ToTopButton from "./ToTopButton";
-import resumeFile from "../assets/resumeFile.pdf";
 import Footer from "./Footer"
 import { socials } from "../data/socials"
+import Home from './Home'
+import { Route, Routes } from 'react-router-dom'
 
 const resumeImg = new URL('../assets/resumeImg.png', import.meta.url).href
 
@@ -16,8 +17,8 @@ export default function Contact() {
                 as saying through shrinking from toil and pain.</p>
             <hr className="hrLight"></hr>
             <form className="contactForm" onSubmit={() => {
+                event.preventDefault();
                 alert("Thanks for getting in touch!");
-                window.location.reload();
             }}>
                 <label>Your Name</label><br></br>
                 <input type="text"></input><br></br>
@@ -25,9 +26,9 @@ export default function Contact() {
                 <input type="text"></input><br></br>
                 <label>Your Message</label><br></br>
                 <textarea rows={9}></textarea>
-            <button className="download" style={{marginBottom: '0'}}>Submit Form</button>
+                <button className="download" style={{ marginBottom: '0' }}>Submit Form</button>
             </form>
-            
+
             <ToTopButton />
             <Footer socials={socials} />
         </div>
