@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 // contact model: firstname, lastname, contact
 const ContactSchema = new mongoose.Schema({
     firstname: {
-        type: "String",
+        type: String,
         trim: true,
         required: "firstname is required"
     },

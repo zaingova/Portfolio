@@ -21,6 +21,7 @@ const create = async (req, res) => {
 // get all users
 const list = async (req, res) => {
     try {
+        // model fields to display on search
         let users = await User.find().select('name email updated created')
         res.json(users)
     } catch (err) {
