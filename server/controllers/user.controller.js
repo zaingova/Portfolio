@@ -53,6 +53,7 @@ const userByID = async (req, res, next, id) => {
 // find user by ID
 const read = async (req, res) => {
     req.profile.password = undefined;
+    req.profile.salt = undefined;
     console.log(req.profile)
     return res.json(req.profile);
 }

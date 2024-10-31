@@ -3,34 +3,44 @@
 import ToTopButton from "./ToTopButton";
 import Footer from "./Footer"
 import { socials } from "../data/socials"
-import Home from './Home'
-import { Route, Routes } from 'react-router-dom'
+import React, { useState } from "react";
 
 const resumeImg = new URL('../assets/resumeImg.png', import.meta.url).href
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
+
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setFormData({
+            ...formData,
+            [name]: value
+        })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(formData)
+        alert(JSON.stringify(formData))
+    }
+
     return (
         <div className="content">
             <p className="headingLarge">CONTACT</p>
-            <p className="heading">On the other hand, we denounce with righteous indignation and dislike
-                men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded
-                by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal
-                blame belongs to those who fail in their duty through weakness of will, which is the same
-                as saying through shrinking from toil and pain.</p>
+            <p className="heading">Use the form below to send me a message!</p>
             <hr className="hrLight"></hr>
-            <form className="contactForm" onSubmit={() => {
-                // prevents the form from redirecting us to '/contact?', becuase the deployed
-                // application woukd crash
-                event.preventDefault();
-                alert("Thanks for getting in touch!");
-            }}>
+            <form className="contactForm" onSubmit={handleSubmit}>
                 <label>Your Name</label><br></br>
-                <input type="text"></input><br></br>
+                <input type="text" onChange={handleChange} name="name" value={formData.name}></input><br></br>
                 <label>Your Email</label><br></br>
-                <input type="text"></input><br></br>
+                <input type="text" onChange={handleChange} name="email" value={formData.email}></input><br></br>
                 <label>Your Message</label><br></br>
-                <textarea rows={9}></textarea>
-                <button className="download" style={{ marginBottom: '0' }}>Submit Form</button>
+                <textarea rows={9} onChange={handleChange} name="message" value={formData.message}></textarea>
+                <button type="submits" className="download" style={{ marginBottom: '0' }}>Submit Form</button>
             </form>
 
             <ToTopButton />

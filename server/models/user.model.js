@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import crypto from 'crypto';
 
-// user model: name, email, password, created, updated
+// User model: name, email, password, created, updated
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -30,39 +30,43 @@ const UserSchema = new mongoose.Schema({
     salt: String
 });
 
-// UserSchema.virtual('plainPassword')
-//     .set(function (password) {
-//         this._plainPassword = password;
-//         this.salt = crypto.randomBytes(16).toString('hex');
-//         this.password = this.encryptPassword(password);
-//     })
-//     .get(function () {
-//         return this._plainPassword;
-//     });
+UserSchema.virtual('inputPassword')
+    .set(function (inputPassword) {
+        this._inputPassword = inputPassword;
+        this.salt = this.generateSalt();
+        this.password = this.hashPassword(inputPassword);
+    })
+    .get(function () {
+        return this._inputPassword;
+    });
 
-// UserSchema.path('password').validate(function (v) {
-//     if (this._plainPassword && this._plainPassword.length < 6) {
-//         this.invalidate('plainPassword', 'Password must be at least 6 characters.');
-//     }
-//     if (this.isNew && !this._plainPassword) {
-//         this.invalidate('plainPassword', 'Password is required');
-//     }
-// }, null);
+UserSchema.path('password').validate(function (password) {
+    if (this._inputPassword && this._inputPassword.length < 6) {
+        this.invalidate('password', 'Password must be at least 6 characters.');
+    }
+    if (this.isNew && !this._inputPassword) {
+        this.invalidate('password', 'Password is required');
+    }
+}, null);
 
-// UserSchema.methods = {
-//     authenticate: function (plainText) {
-//         return this.encryptPassword(plainText) === this.password;
-//     },
-//     encryptPassword: function (password) {
-//         if (!password) return '';
-//         try {
-//             return crypto
-//                 .pbkdf2Sync(password, this.salt, 10000, 64, 'sha512')
-//                 .toString('hex');
-//         } catch (err) {
-//             return '';
-//         }
-//     }
-// };
+UserSchema.methods = {
+    verifyPassword: function (plainPassword) {
+        return this.hashPassword(plainPassword) === this.password;
+    },
+    hashPassword: function (password) {
+        if (!password) return '';
+        try {
+            return crypto
+                .createHmac('sha1', this.salt)
+                .update(password)
+                .digest('hex');
+        } catch (err) {
+            return '';
+        }
+    },
+    generateSalt: function () {
+        return Math.round((new Date().valueOf() * Math.random())) + '';
+    }
+};
 
 export default mongoose.model('User', UserSchema);

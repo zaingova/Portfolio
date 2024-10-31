@@ -78,10 +78,17 @@ button img {
   display: block;
 }
 
+form {
+  width: 30%;
+}
+
+input, textarea {
+  border: 1px solid white;
+}
+
 button:hover {
   border-color: #646cff;
 }
-
 
 hr {
   display: flex;
@@ -294,6 +301,10 @@ nav {
 .hrLight {
   border: 1px solid #3e43ab;
   margin: 0.5em 0 1.8em 0;
+}
+
+.star {
+  padding: 10px;
 }
 
 .download:hover {

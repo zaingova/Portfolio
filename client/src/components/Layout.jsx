@@ -30,6 +30,9 @@ export default function Layout() {
                 </NavLink>|
                 <NavLink to="/contact" className="nav-link">
                     Contact
+                </NavLink>|
+                <NavLink to="/states" className="nav-link">
+                    States
                 </NavLink>
             </nav>
             

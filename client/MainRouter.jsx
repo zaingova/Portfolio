@@ -7,6 +7,7 @@ import Contact from './src/components/Contact'
 import Services from './src/components/Services'
 import Project from './src/components/Project'
 import Layout from './src/components/Layout'
+import States from './src/components/States'
 
 const MainRouter = () => {
     return (<div className='portfolio'>
@@ -17,6 +18,7 @@ const MainRouter = () => {
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/project" element={<Project />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/states" element={<States />} />
         </Routes>
     </div>
     )

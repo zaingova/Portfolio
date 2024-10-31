@@ -1,5 +1,6 @@
 import User from '../models/user.model.js';
 import jwt from 'jsonwebtoken';
+import expressJwt from 'express-jwt';
 import {expressjwt} from 'express-jwt';
 import config from '../../config/config.js';
 
@@ -23,7 +24,7 @@ const signin = async (req, res) => {
         })
     } catch (err) {
         return res.status(401).json({
-            error: "Could not sign in"
+            error: "Could not sign in" + err
         })
     }
 }
